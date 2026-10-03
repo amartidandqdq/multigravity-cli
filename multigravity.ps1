@@ -587,7 +587,7 @@ function Invoke-ImportProfile {
 
     $dest = "$BASE\$name"
     if (Test-Path $dest) {
-        Write-Error "Error: profile '$name' already exists — choose a different name or delete it first"
+        Write-Error "Error: profile '$name' already exists - choose a different name or delete it first"
         exit 1
     }
 
